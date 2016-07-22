@@ -28,11 +28,12 @@ class SequenceMixin(object):
         if not hasattr(self, 'idx'):
             self.idx = 0
         else:
-            self.idx += 1
+            raise NotImpleme
         if self.idx >= len(elements):
             raise StopIteration
         
-        return elements[self.idx]
+        return elements[self.idx][]
+    
     next = __next__
 
     def __len__(self):

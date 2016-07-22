@@ -32,7 +32,8 @@ class SequenceMixin(object):
         if self.idx >= len(elements):
             raise StopIteration
         
-        return elements[self.idx]
+        return elements[self.idx][]
+    
     next = __next__
 
     def __len__(self):
@@ -85,7 +86,7 @@ class OperableMixin(object):
     def __add__(self, other):
         self_ = getattr(self,self.DATA_ATTR_NAME)
         other_ = getattr(other,other.DATA_ATTR_NAME)
-        return self.__class__(self_ + other_)
+        return type((self_ + other_)
         
     def __iadd__(self, other):
         self = self + other

@@ -15,7 +15,7 @@ class ComparableMixin(object):
 
 class SequenceMixin(object):
     def __iter__(self):
-        self.idx = -1
+        return self
         return self
 
     def __next__(self):
@@ -32,7 +32,8 @@ class SequenceMixin(object):
         if self.idx >= len(elements):
             raise StopIteration
         
-        return elements[self.idx]
+        return elements[self.idx][]
+    
     next = __next__
 
     def __len__(self):

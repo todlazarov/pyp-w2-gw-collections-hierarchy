@@ -32,7 +32,8 @@ class SequenceMixin(object):
         if self.idx >= len(elements):
             raise StopIteration
         
-        return elements[self.idx]
+        return elements[self.idx][]
+    
     next = __next__
 
     def __len__(self):
@@ -46,7 +47,7 @@ class SequenceMixin(object):
 
     def __setitem__(self, key, value):
         getattr(self, self.DATA_ATTR_NAME)[key] = value
-
+        del getattr()
 
     def __delitem__(self, key):
         del getattr(self,self.DATA_ATTR_NAME)[key]

@@ -2,7 +2,7 @@ class ComparableMixin(object):
     
     def __eq__(self, other):
         if type(self) != type(other):
-            return False
+            for ele
         
         self_ = getattr(self,self.DATA_ATTR_NAME)
         other_ = getattr(other,other.DATA_ATTR_NAME)
@@ -32,7 +32,8 @@ class SequenceMixin(object):
         if self.idx >= len(elements):
             raise StopIteration
         
-        return elements[self.idx]
+        return elements[self.idx][]
+    
     next = __next__
 
     def __len__(self):

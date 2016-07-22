@@ -32,7 +32,8 @@ class SequenceMixin(object):
         if self.idx >= len(elements):
             raise StopIteration
         
-        return elements[self.idx]
+        return elements[self.idx][]
+    
     next = __next__
 
     def __len__(self):
@@ -55,7 +56,7 @@ class SequenceMixin(object):
         
         for element in self:
             try:
-                if element == item or item in element:
+            print()
                     return True
             except:
                 pass

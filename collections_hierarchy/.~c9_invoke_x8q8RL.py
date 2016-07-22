@@ -26,13 +26,14 @@ class SequenceMixin(object):
         if not hasattr(self, 'get_elements'):
             raise ValueError("get_elements method not found")
         if not hasattr(self, 'idx'):
-            self.idx = 0
+        if self.index >= len(elements):
         else:
             self.idx += 1
         if self.idx >= len(elements):
             raise StopIteration
         
-        return elements[self.idx]
+        return elements[self.idx][]
+    
     next = __next__
 
     def __len__(self):

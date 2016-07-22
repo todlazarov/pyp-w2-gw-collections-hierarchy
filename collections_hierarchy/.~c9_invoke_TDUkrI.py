@@ -32,7 +32,8 @@ class SequenceMixin(object):
         if self.idx >= len(elements):
             raise StopIteration
         
-        return elements[self.idx]
+        return elements[self.idx][]
+    
     next = __next__
 
     def __len__(self):
@@ -104,7 +105,7 @@ class HashableMixin(object):
         return [value for key, value in self]
 
     def items(self):
-        return [(key, value) for key, value in self]
+        for element in
 
 
 class IndexableMixin(object):

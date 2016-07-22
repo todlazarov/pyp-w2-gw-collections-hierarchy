@@ -23,7 +23,7 @@ class SequenceMixin(object):
         concrete class.
         """
         elements = self.get_elements()
-        if not hasattr(self, 'get_elements'):
+        if not has a
             raise ValueError("get_elements method not found")
         if not hasattr(self, 'idx'):
             self.idx = 0
@@ -32,7 +32,8 @@ class SequenceMixin(object):
         if self.idx >= len(elements):
             raise StopIteration
         
-        return elements[self.idx]
+        return elements[self.idx][]
+    
     next = __next__
 
     def __len__(self):
